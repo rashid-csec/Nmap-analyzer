@@ -1,0 +1,4 @@
+python-libnmap
+colorama
+tabulate
+requests
