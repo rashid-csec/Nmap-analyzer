@@ -1,0 +1,23 @@
+import sys
+from colorama import Fore, Style
+
+ASCII_BANNER = f"""{Fore.CYAN}{Style.BRIGHT}
+███╗   ██╗███╗   ███╗ █████╗ ██████╗ 
+████╗  ██║████╗ ████║██╔══██╗██╔══██╗
+██╔██╗ ██║██╔████╔██║███████║██████╔╝
+██║╚██╗██║██║╚██╔╝██║██╔══██║██╔═══╝ 
+██║ ╚████║██║ ╚═╝ ██║██║  ██║██║     
+╚═╝  ╚═══╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     
+                                     
+            Analyzer v2.1
+{Style.RESET_ALL}"""
+
+def print_banner():
+    print(ASCII_BANNER)
+
+def get_version_info():
+    return f"""Nmap Analyzer
+Version : 2.1.0
+Author  : Rashid
+GitHub  : https://github.com/rashid-csec
+Python  : {sys.version.split()[0]}"""
